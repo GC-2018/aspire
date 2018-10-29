@@ -6,6 +6,18 @@ const path = require('path');
 const app = express();
 
 // Connect to DB
+mongoose
+  .connect(
+    'mongodb://dbuser:dbuser1@ds021969.mlab.com:21969/cmccall',
+    { useNewUrlParser: true }
+  ) // successful
+  .then(() => {
+    console.log('Connected to database!');
+  })
+  // catch errors
+  .catch(() => {
+    console.log('Connection failed!');
+  });
 
 
 // Parsing json data
