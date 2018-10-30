@@ -1,0 +1,7 @@
+.background {
+    position: absolute; 
+    background: url('../../assets/images/worship1.jpeg') no-repeat center top;
+    background-size: cover;
+    z-index: -1;
+    
+}
