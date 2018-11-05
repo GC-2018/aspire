@@ -6,7 +6,7 @@
   [attr.role]="!(isHandset$ | async) ? 'dialog' : 'navigation'"
   [mode]="(isHandset$ | async) ? 'over' : 'side'"
   [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="primary">Aspire Christian Fellowship</mat-toolbar>
+    <mat-toolbar color="primary">Aspire Menu</mat-toolbar>
     <mat-nav-list>
         <a mat-list-item color="primary" routerLink="/about" >About</a>
         <ul>
@@ -34,6 +34,22 @@
         <span class="spacer">
           <a mat-button class='topBar' routerLink="/about" routerLinkActive="mat-accent">About</a>
         </span>
+        <span class="spacer"></span>
+        <ul class='topBar'>
+          <li>
+            <a mat-button routerLink="/ministries" routerLinkActive="mat-accent">Ministries</a>
+          </li>
+        </ul>
+        <ul class='topBar'>
+          <li>
+            <a mat-button routerLink="/find" routerLinkActive="mat-accent">Find Us</a>
+          </li>
+        </ul>
+        <ul class='topBar'>
+          <li>
+            <a mat-button routerLink="/contact" routerLinkActive="mat-accent">Contact Us</a>
+          </li>
+        </ul>
       </mat-toolbar>
     </mat-toolbar>
     <ng-content></ng-content>
