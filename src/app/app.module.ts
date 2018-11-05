@@ -8,6 +8,11 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
+import { MapComponent } from './map/map.component';
+import { ContactComponent } from './contact/contact.component';
+import { MinistriesComponent } from './ministries/ministries.component';
+import { MediaComponent } from './media/media.component';
+
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -23,7 +28,11 @@ import { AngularMaterialModule } from './angular-material.module';
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    MainNavComponent
+    MainNavComponent,
+    MapComponent,
+    ContactComponent,
+    MinistriesComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,

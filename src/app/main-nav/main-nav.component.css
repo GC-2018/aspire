@@ -36,14 +36,10 @@
   
   a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   
   .spacer {
     flex: 1 1 auto;
   }
-  
-  /* li {
-    color: white;
-  } */
   
