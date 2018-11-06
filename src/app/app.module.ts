@@ -12,7 +12,7 @@ import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
 import { MinistriesComponent } from './ministries/ministries.component';
 import { MediaComponent } from './media/media.component';
-
+import { AngularMaterialModule } from './angular-material.module';
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -20,8 +20,6 @@ import {
   MatIconModule,
   MatListModule
 } from '@angular/material';
-import { AngularMaterialModule } from './angular-material.module';
-
 
 @NgModule({
   declarations: [
@@ -49,4 +47,4 @@ import { AngularMaterialModule } from './angular-material.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
