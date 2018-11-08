@@ -1,4 +1,8 @@
 main {
   width: 90%;
   margin: 1rem auto;
+  z-index: -1;
+}
+app-main-nav {
+  z-index: 0;
 }
