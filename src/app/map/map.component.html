@@ -1,3 +1,30 @@
-<p>
-  map works!
-</p>
+<div class="background">
+
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Map needs to be in the left -->
+      <div class="map col-sm-12 col-md-8 col-lg-8">
+  
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="true">
+  
+          <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m, i)" [latitude]="m.lat"
+            [longitude]="m.lng">
+  
+            <agm-info-window>
+              <strong>{{m.name}}</strong>
+            </agm-info-window>
+  
+          </agm-marker>
+  
+        </agm-map>
+      </div>
+
+      <div class="addresses col-sm-12 col-md-4 col-lg-4">
+          <mat-card>
+              <h2>Aspire</h2>
+              <h3>925 Columbus Av. Waco, Texas. 76701</h3>
+          </mat-card>
+      </div>
+  </div>
+</div>

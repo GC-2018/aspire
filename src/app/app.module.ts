@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +43,10 @@ import {
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCR6A98I0bE8U9YEyMgetFaHAIuqBLQme0'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
