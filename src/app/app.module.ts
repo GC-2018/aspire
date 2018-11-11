@@ -13,6 +13,7 @@ import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
 import { MinistriesComponent } from './ministries/ministries.component';
 import { MediaComponent } from './media/media.component';
+import { BeliefsComponent } from './beliefs/beliefs.component';
 import { AngularMaterialModule } from './angular-material.module';
 import {
   MatToolbarModule,
@@ -31,7 +32,8 @@ import {
     MapComponent,
     ContactComponent,
     MinistriesComponent,
-    MediaComponent
+    MediaComponent,
+    BeliefsComponent
   ],
   imports: [
     BrowserModule,
