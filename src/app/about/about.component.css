@@ -1,0 +1,17 @@
+.background {
+    position: absolute;
+    background: url('../../assets/images/mountain9.jpeg') no-repeat center top;
+    background-size: cover;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.welcome {
+    background-color: rgba(255, 255, 255, 0.849);
+    max-width: 75%;
+    margin: auto;
+}
