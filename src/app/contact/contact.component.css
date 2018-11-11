@@ -1,6 +1,6 @@
 .background {
     position: absolute;
-    background: url('/assets/images/mountain5.jpeg') no-repeat center top;
+    background: url('/assets/images/mountain5.jpg') no-repeat center top;
     background-size: cover;
     z-index: -1;
     content: '';
@@ -10,7 +10,7 @@
     right: 0;
 }
 
-.welcome {
+.contact {
     background-color: rgba(255, 255, 255, 0.849);
     max-width: 75%;
     margin: auto;
