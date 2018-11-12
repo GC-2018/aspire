@@ -1,5 +1,5 @@
 # aspire
-church framework application
+Church Framework Application
 
 Project requirements:
 Home page,
