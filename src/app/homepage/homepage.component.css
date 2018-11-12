@@ -1,6 +1,7 @@
 .background {
   position: absolute;
-  background: url('../../assets/images/worship1.jpeg') no-repeat center top;
+  background: url('https://lh3.googleusercontent.com/WmatS6zB0E4p95CjBBWUm7We0UZFScs48BnLc-Y32VRCTsOs5nfEjndp3YJ9_HRwd75BEYgD2vWI8CpIWnsQTH2Eh6WdDghH6onJZ8PmJm2IzmZOJirVpeJ-GFxC8ZWpP4s-U7WSgw=w2400') 
+  no-repeat center top;
   background-size: cover;
   z-index: -1;
   content: '';

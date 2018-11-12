@@ -1,6 +1,7 @@
 .background {
     position: absolute;
-    background: url('../../assets/images/mountain9.jpeg') no-repeat center top;
+    background: url('https://lh3.googleusercontent.com/IoByxQvuy1c7jH4XUvKcFD2nratDEQHtNtbDJIneQfE7NWXv0r8i8W5MdQtCM-tk-VCWhPuKQX8-1N23mbGYwdlqiAxaWLRP8vDI-7E9G6dysq--s7ALveQvf74grvjIUwir4FvReA=w2400') 
+    no-repeat center top;
     background-size: cover;
     z-index: -1;
     content: '';

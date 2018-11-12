@@ -1,6 +1,7 @@
 .background {
     position: absolute;
-    background: url('/assets/images/mountain7.jpg') no-repeat center top;
+    background: url('https://lh3.googleusercontent.com/sG9K7s2lTCLF8jjDlcx7zx0N_tuPdLfHze9HBtuUVylqGYKkOO4kPv25BnY3Gsr_dfqIzWk5gm881PSvodWWFpTaGgtU_AlmXAfWyZss_SWgrCG8Fab35PNk-b5zD5_EBY7zKEPefQ=w2400')
+    no-repeat center top;
     background-size: cover;
     z-index: -1;
     content: '';
@@ -14,4 +15,9 @@
     background-color: rgba(255, 255, 255, 0.849);
     max-width: 75%;
     margin: auto;
+    z-index: -1;
+}
+
+.beliefsstatement {
+    font-size: 13px;
 }

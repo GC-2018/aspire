@@ -29,7 +29,8 @@ agm-map {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url('/../assets/images/mountain2.jpg') no-repeat center top;
+    background: url('https://lh3.googleusercontent.com/SPrIfQouMzCxo2pdqaCHvBICbSaSNyZ9MNOnFzLwJgopgKpxqAvtgAckS6PV1GBZ2XpqtDhD3BgyW0f9_UpUujgjG7IBMCiyZYmHsObsQMzLKUnLAWwtYnlzPwhBjq1bSgjQP1RPJw=w2400') 
+    no-repeat center top;
     background-size: cover;
     content: '';
     z-index: -1;
