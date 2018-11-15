@@ -19,7 +19,6 @@ mongoose
     console.log('Connection failed!');
   });
 
-
 // Parsing json data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -39,10 +38,10 @@ app.use((req, res, next) => {
 });
 
 // importing routes
-
+const userRoutes = require('./routes/user');
 
 // Paths
-
+app.use('/api/user', userRoutes);
 
 // ng build for backend
 app.use('/', express.static(path.join(__dirname, 'angular')));
