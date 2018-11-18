@@ -22,12 +22,18 @@ import {
   MatIconModule,
   MatListModule
 } from '@angular/material';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
+import { AuthInterceptor } from './users/auth-interceptor';
+import { ErrorInterceptor } from './error-intercepto';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutComponent,
+    ErrorComponent,
     MainNavComponent,
     MapComponent,
     ContactComponent,
@@ -40,6 +46,8 @@ import {
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -48,9 +56,13 @@ import {
     MatListModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCR6A98I0bE8U9YEyMgetFaHAIuqBLQme0'
-    }),
+    })
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [ErrorComponent]
 })
 export class AppModule {}
