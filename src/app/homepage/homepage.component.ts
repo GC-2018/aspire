@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../users/auth.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-homepage',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  userIsAuthenticated = false;
+  private authListenerSubs: Subscription;
 
-  constructor() { }
+  constructor(private authService: AuthService) {}
 
-  ngOnInit() {
+  ngAnimate() {
   }
 
+  ngOnInit() {
+    this.userIsAuthenticated = this.authService.getIsAuth();
+    this.authListenerSubs = this.authService
+      .getAuthStatusListener()
+      .subscribe(isAuthenticated => {
+        this.userIsAuthenticated = isAuthenticated;
+      });
+  }
 }
