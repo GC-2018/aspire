@@ -11,15 +11,9 @@
   right: 0;
 }
 
-.container {
-  filter: alpha(opacity=90);   
-  /*max-width: 75%;
-  margin: auto;*/
-  
-  
-}
-
 .jumbotron {
+  max-width: 75%;
+  margin: auto;
   opacity: 0.5;
   text-align: center;
   color: black;
