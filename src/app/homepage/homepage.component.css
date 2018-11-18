@@ -11,9 +11,17 @@
   right: 0;
 }
 
-.welcome {
-  background-color: rgba(255, 255, 255, 0.849);
-  max-width: 75%;
-  margin: auto;
+.container {
+  filter: alpha(opacity=90);   
+  /*max-width: 75%;
+  margin: auto;*/
+  
+  
+}
+
+.jumbotron {
+  opacity: 0.5;
   text-align: center;
+  color: black;
+  opacity: 0.8;
 }
