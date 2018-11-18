@@ -14,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MinistriesComponent } from './ministries/ministries.component';
 import { MediaComponent } from './media/media.component';
 import { BeliefsComponent } from './beliefs/beliefs.component';
+import { VideosComponent } from './videos/videos.component';
+import { VoicerecordingsComponent } from './voicerecordings/voicerecordings.component';
 import { AngularMaterialModule } from './angular-material.module';
 import {
   MatToolbarModule,
@@ -26,7 +28,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { AuthInterceptor } from './users/auth-interceptor';
-import { ErrorInterceptor } from './error-intercepto';
+import { ErrorInterceptor } from './error-interceptor';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ErrorInterceptor } from './error-intercepto';
     ContactComponent,
     MinistriesComponent,
     MediaComponent,
-    BeliefsComponent
+    BeliefsComponent,
+    VideosComponent,
+    VoicerecordingsComponent
   ],
   imports: [
     BrowserModule,

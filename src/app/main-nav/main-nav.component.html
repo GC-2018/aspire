@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav 
-  #drawer class="sidenav" 
+  #drawer 
+  class="sidenav" 
   fixedInViewport="false" 
   [attr.role]="!(isHandset$ | async) ? 'dialog' : 'navigation'"
   [mode]="(isHandset$ | async) ? 'over' : 'side'" 
@@ -9,12 +10,22 @@
     <mat-nav-list>
       <ul>
         <li *ngIf="!userIsAuthenticated">
-          <a mat-list-item color="primary" routerLink="/auth/signup">Signup</a>
+          <a mat-list-item color="primary" routerLink="/auth/login">Login</a>
         </li>
       </ul>
       <ul>
         <li *ngIf="!userIsAuthenticated">
-          <a mat-list-item color="primary" routerLink="/auth/login">Login</a>
+          <a mat-list-item color="primary" routerLink="/auth/signup">Signup</a>
+        </li>
+      </ul>
+      <ul>
+        <li *ngIf="userIsAuthenticated">
+          <a mat-list-item color="primary" routerLink="/videos" routerLinkActive="mat-accent">Videos</a>
+        </li>
+      </ul>
+      <ul>
+        <li *ngIf="userIsAuthenticated">
+          <a mat-list-item color="primary" routerLink="/voicerecordings" routerLinkActive="mat-accent">Voice Recordings</a>
         </li>
       </ul>
       <ul>
@@ -29,7 +40,7 @@
       </ul>
       <ul>
         <li>
-          <a mat-list-item color="primary" routerLink="/whatwebelieve">What We Believe</a>
+          <a mat-list-item color="primary" routerLink="/beliefs">What We Believe</a>
         </li>
       </ul>
       <ul>
@@ -42,19 +53,28 @@
           <a mat-list-item color="primary" routerLink="/contact">Contact Us</a>
         </li>
       </ul>
+      <ul>
+        <li *ngIf="userIsAuthenticated">
+          <a mat-list-item color="primary" *ngIf="userIsAuthenticated" (click)="onLogout()">Logout</a>
+        </li>
+      </ul>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">Menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <!-- <span>group-project</span> -->
       <mat-toolbar color="primary">
         <span>
           <a routerLink="/home" routerLinkActive="mat-accent">Aspire</a>
         </span>
-          <a mat-button class='topBar' routerLink="/about" routerLinkActive="mat-accent">About</a>
+        <ul class='topBar'>
+          <li>
+            <a mat-button routerLink="/about" routerLinkActive="mat-accent">About</a>
+          </li>
+        </ul>
         <ul class='topBar'>
           <li>
             <a mat-button routerLink="/ministries" routerLinkActive="mat-accent">Ministries</a>
@@ -62,7 +82,7 @@
         </ul>
         <ul class='topBar'>
           <li>
-            <a mat-button routerLink="/whatwebelieve" routerLinkActive="mat-accent">What We Believe</a>
+            <a mat-button routerLink="/beliefs" routerLinkActive="mat-accent">What We Believe</a>
           </li>
         </ul>
         <ul class='topBar'>
@@ -86,7 +106,22 @@
             <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">Signup</a>
           </li>
         </ul>
-        
+        <ul class='topBar'>
+          <li *ngIf="userIsAuthenticated">
+            <a mat-button routerLink="/videos" routerLinkActive="mat-accent">Videos</a>
+          </li>
+        </ul>
+        <ul class='topBar'>
+          <li *ngIf="userIsAuthenticated">
+            <a mat-button routerLink="/voicerecordings" routerLinkActive="mat-accent">Voice Recordings</a>
+          </li>
+        </ul>
+        <ul class='topBar'>
+          <li *ngIf="userIsAuthenticated">
+            <button mat-button (click)="onLogout()">Logout</button>
+          </li>
+        </ul>
+
       </mat-toolbar>
     </mat-toolbar>
     <ng-content></ng-content>

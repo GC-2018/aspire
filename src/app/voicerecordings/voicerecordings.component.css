@@ -1,0 +1,12 @@
+.background {
+    position: absolute;
+    background: url('https://lh3.googleusercontent.com/WHxUf6G2KTzI2bLw6cmRt2krtaC1ojyZCk5XfLibx6v0PWBOsBV28Ga33598YmzycsWb1Oo1f0TePQLFbj6btCNFhLS9ycqj_0hBx55_xsqP42t3JjtTj3GYHrolYV2cKB_F0oyZYA=w2400') 
+    no-repeat center top;
+    background-size: cover;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
