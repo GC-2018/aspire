@@ -5,19 +5,19 @@ mat-form-field {
 mat-spinner {
   margin: auto;
 }
-/* .background {
+.background {
   position: absolute;
   top: 55px;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url('')
+  background: url('https://lh3.googleusercontent.com/kNGYVTv1tpbJd6547OoBlPOq3n_3dgLJojrFFhFvdkBGMUWxLBxCyXqgGv9xholKoWHXgKWdzK8yXfg0ELLt9i9wqUeHIpU4JE9YvC_gCLE2_6gVWTU2Jx0Y0-6HN0dEmtyE-ffcWw=w2400')
     no-repeat center top;
   background-size: cover;
   content: '';
   z-index: -1;
   display: grid;
-} */
+} 
 .login-card {
   margin: auto;
   background-color: rgba(255, 255, 255, 0.849);
